@@ -1,0 +1,19 @@
+{
+  "name": "audit-tool",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Manual, one-URL-at-a-time accessibility + UX screen for prospecting. No batch mode, no crawler, by design.",
+  "scripts": {
+    "screen": "node src/screen.mjs",
+    "setup": "playwright install chromium"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "lighthouse": "^12.8.0",
+    "playwright": "^1.55.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
